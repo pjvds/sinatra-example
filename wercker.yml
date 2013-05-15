@@ -1,0 +1,6 @@
+box: wercker/ruby
+deploy:
+    steps:
+        - openshift-deploy:
+            private_key: $WERCKER_OPENSHIFT_PRIVATE_KEY
+            git_url: $WERCKER_OPENSHIFT_GITURL
